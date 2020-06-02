@@ -1,0 +1,30 @@
+body {
+  background-color: black;
+  margin: 0px;
+  color: white;
+  font-family: "open sans", sans-serif;
+}
+
+body .gallery-title-container {
+  max-width: 100%;
+}
+
+body .gallery-title-container .gallery-title {
+  font-size: 2rem;
+  color: #fafafa;
+  padding: 10px;
+}
+
+body .gallery-container {
+  max-width: 100%;
+  margin: 0px;
+}
+
+body .gallery-container .main-img {
+  max-width: 100%;
+}
+
+body .gallery-container .main-img .main-image {
+  width: 400px;
+}
+/*# sourceMappingURL=gallery.css.map */

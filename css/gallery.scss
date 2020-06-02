@@ -1,0 +1,26 @@
+body {
+    background-color: black;
+    margin: 0px;
+    color: white;
+    font-family: "open sans", sans-serif;
+
+    .gallery-title-container{
+    max-width: 100%;
+        .gallery-title{
+            font-size: 2rem;
+            color: #fafafa;
+            padding: 10px;
+        }
+    }
+        .gallery-container {
+            max-width: 100%;
+            margin: 0px;
+        .main-img {
+            max-width: 100%;
+            .main-image{
+                width: 400px;
+
+            }
+        }
+    }
+}
