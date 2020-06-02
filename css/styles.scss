@@ -6,8 +6,9 @@ body {
     background-color: black;
     margin: 0px;
     color: white;
-    font-family: "open sans", sans-serif;
+    padding-top: 80px;
 
+    font-family: "open sans", sans-serif;
     .header {
         .nav {
             width: 100%;
@@ -16,6 +17,7 @@ body {
             display: flex;
             align-items: center;
             position: fixed;
+            top: 0;
             .hamburger-container {
                 width: 50%;
                 .hamburger {
