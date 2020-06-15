@@ -1,19 +1,22 @@
-body {
+body .fierita-wrapper {
+  overflow: hidden;
+  height: 100vh;
   /* Animations */
 }
 
-body .sky-container {
+body .fierita-wrapper .sky-container {
   background: linear-gradient(125deg, #a2b0d3 0%, #eceff1 100%);
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
+  position: fixed;
   width: 100%;
 }
 
-body .sky-container .star {
+body .fierita-wrapper .sky-container .star {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 2px;
+  height: 1px;
   overflow: hidden;
   background: linear-gradient(-45deg, #c5c5c5, rgba(0, 0, 255, 0));
   -webkit-filter: drop-shadow(0 0 6px #eaeffa);
@@ -22,9 +25,10 @@ body .sky-container .star {
           animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
 }
 
-body .sky-container .star::before, body .sky-container .star::after {
+body .fierita-wrapper .sky-container .star::before,
+body .fierita-wrapper .sky-container .star::after {
   position: absolute;
-  content: '';
+  content: "";
   top: calc(50% - 1px);
   right: 0;
   height: 2px;
@@ -36,67 +40,72 @@ body .sky-container .star::before, body .sky-container .star::after {
           animation: shining 3000ms ease-in-out infinite;
 }
 
-body .sky-container .star::after {
+body .fierita-wrapper .sky-container .star::after {
   -webkit-transform: translateX(50%) rotateZ(-45deg);
           transform: translateX(50%) rotateZ(-45deg);
 }
 
-body .sky-container .star:nth-child(1) {
+body .fierita-wrapper .sky-container .star:nth-child(1) {
   top: calc(50% - 200px);
   left: calc(50% - 300px);
   -webkit-animation-delay: 650ms;
           animation-delay: 650ms;
 }
 
-body .sky-container .star:nth-child(1)::before, body .sky-container .star:nth-child(1)::after {
+body .fierita-wrapper .sky-container .star:nth-child(1)::before,
+body .fierita-wrapper .sky-container .star:nth-child(1)::after {
   -webkit-animation-delay: 650ms;
           animation-delay: 650ms;
 }
 
-body .sky-container .star:nth-child(2) {
+body .fierita-wrapper .sky-container .star:nth-child(2) {
   top: calc(50% - -50px);
   left: calc(50% - 190px);
   -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
 }
 
-body .sky-container .star:nth-child(2)::before, body .sky-container .star:nth-child(2)::after {
+body .fierita-wrapper .sky-container .star:nth-child(2)::before,
+body .fierita-wrapper .sky-container .star:nth-child(2)::after {
   -webkit-animation-delay: 150ms;
           animation-delay: 150ms;
 }
 
-body .sky-container .star:nth-child(3) {
+body .fierita-wrapper .sky-container .star:nth-child(3) {
   top: calc(50% - -90px);
   left: calc(50% - 200px);
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
 }
 
-body .sky-container .star:nth-child(3)::before, body .sky-container .star:nth-child(3)::after {
+body .fierita-wrapper .sky-container .star:nth-child(3)::before,
+body .fierita-wrapper .sky-container .star:nth-child(3)::after {
   -webkit-animation-delay: 1600ms;
           animation-delay: 1600ms;
 }
 
-body .sky-container .star:nth-child(4) {
+body .fierita-wrapper .sky-container .star:nth-child(4) {
   top: calc(50% - 50px);
   left: calc(50% - 250px);
   -webkit-animation-delay: 4700ms;
           animation-delay: 4700ms;
 }
 
-body .sky-container .star:nth-child(4)::before, body .sky-container .star:nth-child(4)::after {
+body .fierita-wrapper .sky-container .star:nth-child(4)::before,
+body .fierita-wrapper .sky-container .star:nth-child(4)::after {
   -webkit-animation-delay: 4700ms;
           animation-delay: 4700ms;
 }
 
-body .sky-container .star:nth-child(5) {
+body .fierita-wrapper .sky-container .star:nth-child(5) {
   top: calc(50% - -190px);
   left: calc(50% - 200px);
   -webkit-animation-delay: 2100ms;
           animation-delay: 2100ms;
 }
 
-body .sky-container .star:nth-child(5)::before, body .sky-container .star:nth-child(5)::after {
+body .fierita-wrapper .sky-container .star:nth-child(5)::before,
+body .fierita-wrapper .sky-container .star:nth-child(5)::after {
   -webkit-animation-delay: 2100ms;
           animation-delay: 2100ms;
 }
@@ -169,5 +178,12 @@ body .sky-container .star:nth-child(5)::before, body .sky-container .star:nth-ch
     -webkit-transform: translateX(320px);
             transform: translateX(320px);
   }
+}
+
+body .fierita-wrapper .fierita-title {
+  margin-top: 30%;
+  margin-left: 30px;
+  font-size: 4rem;
+  width: 20%;
 }
 /*# sourceMappingURL=fierita.css.map */
