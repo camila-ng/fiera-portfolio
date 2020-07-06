@@ -5,3 +5,5 @@ icon.addEventListener('click', () => {
     console.log('holis')
     navLinks.classList.toggle('visible')
 });
+
+

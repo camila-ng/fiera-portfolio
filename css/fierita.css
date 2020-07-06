@@ -1,14 +1,26 @@
 body .fierita-wrapper {
   overflow: hidden;
-  height: 100vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   /* Animations */
+}
+
+body .fierita-wrapper:nth-child(3) {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .fierita-wrapper .sky-container {
   background: linear-gradient(125deg, #a2b0d3 0%, #eceff1 100%);
   -webkit-transform: rotateZ(45deg);
           transform: rotateZ(45deg);
-  position: fixed;
   width: 100%;
 }
 
@@ -181,9 +193,15 @@ body .fierita-wrapper .sky-container .star:nth-child(5)::after {
 }
 
 body .fierita-wrapper .fierita-title {
-  margin-top: 30%;
+  margin-top: 40%;
   margin-left: 30px;
   font-size: 4rem;
   width: 20%;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+body .fierita-wrapper .description {
+  margin: 20px;
 }
 /*# sourceMappingURL=fierita.css.map */
