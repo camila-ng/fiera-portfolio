@@ -203,5 +203,11 @@ body .fierita-wrapper .fierita-title {
 
 body .fierita-wrapper .description {
   margin: 20px;
+  text-align: justify;
+}
+
+body .fierita-wrapper .description-title {
+  margin: 20px;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=fierita.css.map */

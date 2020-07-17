@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson Text:wght@400;500;600&family=Open+Sans:wght@300;400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&display=swap');
 
 body {
     background-color: black;
@@ -121,7 +122,7 @@ body {
                 padding: 30px;
                 padding-bottom: 0;
                 margin: 0px;
-                font-family: "Crimson Text", sans-serif;
+                font-family: "Gayathri", sans-serif;
                 text-shadow: 0px 0px 0px rgba(150, 150, 150, 1);
                 &:first-child {
                     color: #fafafa;
@@ -136,13 +137,13 @@ body {
             }
         }
         .about-photo-container {
-            padding: 30px;
+            padding: 0px;
             padding-top: 0px;
             .about-photo {
                 width: 100%;
                 height: 400px;
                 background-size: cover;
-                background-position: top;
+                background-position: center 25%;
                 background-image: url("../images/mariana-fierita-3.JPG");
             }
         }
@@ -221,6 +222,180 @@ body {
             margin-left: 20px;
             height: 1px;
             background-color: rgb(214, 214, 214);
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    body {
+        .header {
+            .nav {
+                width: 100%;
+                height: 80px;
+                background-color: #fafafa;
+                display: flex;
+                align-items: center;
+                position: fixed;
+                top: 0;
+                .hamburger-container {
+                    width: 50%;
+                    .hamburger {
+                        display: flex;
+                        flex-direction: column;
+                        .icon {
+                            margin-left: 60px;
+                            width: 15px;
+                            height: 1px;
+                            margin-bottom: 5px;
+                            background-color: black;
+                        }
+                    }
+                }
+                .logo-container {
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-start;
+                    .logo {
+                        font-weight: bold;
+                        font-size: 2.5rem;
+                        color: black;
+                        right: 50%;
+                        transform: translate(-50%);
+                        font-family: "open sans", sans-serif;
+                    }
+                }
+                .elements-container {
+                    background-color: #fafafa;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 150px;
+                    height: 240px;
+                    position: fixed;
+                    width: 100%;
+                    font-family: "open sans", sans-serif;
+                    letter-spacing: 1px;
+                    display: none;
+    
+                    &.visible {
+                        display: flex;
+                    }
+    
+                    .elements {
+                        margin-left: 40px;
+                        color: black;
+                        font-weight: 600;
+                        font-size: 0.6rem;
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        padding: 20px;
+    
+                        .line {
+                            width: 90%;
+                            height: 1px;
+                            background-color: rgb(214, 214, 214);
+                        }
+                        .element {
+                            margin-bottom: 10px;
+                            margin-top: 10px;
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+        .content {
+            .main-photo-container {
+                margin-top: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 500px;
+                .main-photo {
+                    margin-top: 120px;
+                    width: 100%;
+                    height: 700px;
+                    background-size: cover;
+                    background-position: center 20%;
+                    background-image: url("../images/mariana-fierita.JPG");
+                }
+            }
+            .line-container {
+                margin-top: 170px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .content-line {
+                    width: 90%;
+                    height: 1px;
+                    background-color: rgb(214, 214, 214);
+                }
+            }
+            .name-container {
+                width: 100%;
+                height: 150px;
+                display: flex;
+                .name {
+                    font-weight: 600;
+                    color: #fafafa;
+                    font-size: 1.5rem;
+                    padding: 30px;
+                    padding-bottom: 0;
+                    margin: 0px;
+                    font-family: "Gayathri", sans-serif;
+                    text-shadow: 0px 0px 0px rgba(150, 150, 150, 1);
+                    &:first-child {
+                        color: #fafafa;
+                    }
+                    &:nth-child(2) {
+                        padding: 0 30px 0 0;
+                        padding-left: 30px;
+                        font-size: 3rem;
+                        margin: 0px;
+                        color: #fafafa;
+                    }
+                }
+            }
+            .about-photo-container {
+                padding: 30px;
+                padding-top: 0px;
+                .about-photo {
+                    width: 100%;
+                    height: 400px;
+                    background-size: cover;
+                    background-position: top 30%;
+                }
+            }
+            .about-text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0px;
+                line-height: 1.5;
+                margin-bottom: 0px;
+                .about-title {
+                    color: #fafafa;
+                    font-size: 1.5rem;
+                    font-family: "Crimson Text", sans-serif;
+                }
+                .about-text {
+                    width: 55%;
+                    margin-bottom: 20px;
+                    display: flex;
+                    font-weight: 400;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 0.7rem;
+                    letter-spacing: 0.8px;
+                    font-family: "open sans", sans-serif;
+                    color: #fafafac7;
+                    text-align: justify;
+                }
+            }
         }
     }
 }
