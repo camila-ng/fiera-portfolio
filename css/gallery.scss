@@ -15,21 +15,19 @@
         justify-content: center;
         .image-container {
             padding: 10px;
-        }
-        .bottom-images {
-            width: 100%;
-            height: 500px;
-            margin: 20px;
-            object-fit: cover;
+
+            .bottom-images {
+                width: 100%;
+                height: 500px;
+                margin: 20px;
+                object-fit: cover;
+            }
         }
     }
 }
 
 @media (min-width: 800px) {
     .gallery-content {
-        .gallery-title {
-        }
-
         .images {
             display: flex;
             flex-wrap: wrap;
@@ -37,12 +35,18 @@
             align-items: center;
             justify-content: center;
             .image-container {
-            }
-            .bottom-images {
-                width: 300px;
-                height: 500px;
-                margin: 20px;
-                object-fit: cover;
+                &:hover{
+                    opacity: 0.5;
+                    transition: 0.5s;
+                }
+                .bottom-images {
+                    width: 300px;
+                    height: 500px;
+                    margin: 20px;
+                    object-fit: cover;
+
+
+                }
             }
         }
     }
