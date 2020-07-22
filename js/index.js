@@ -8,8 +8,16 @@ icon.addEventListener('click', () => {
 });
 
 window.sr = ScrollReveal();
-  sr.reveal('.middle-content', {
+  sr.reveal('.middle-content',{
     duration: 3000,
     origin: 'bottom',
     distance: '-100px'
+  });
+
+
+  window.sr = ScrollReveal();
+  sr.reveal('.bottom-images',{
+    duration: 1000,
+    origin: 'bottom',
+    distance: '-50px'
   });
