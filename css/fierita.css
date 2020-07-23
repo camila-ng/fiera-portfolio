@@ -210,4 +210,223 @@ body .fierita-wrapper .description-title {
   margin: 20px;
   font-size: 2rem;
 }
+
+@media (min-width: 800px) {
+  body .fierita-wrapper {
+    overflow: hidden;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* Animations */
+  }
+  body .fierita-wrapper:nth-child(3) {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .fierita-wrapper .sky-container {
+    background: linear-gradient(125deg, #a2b0d3 0%, #eceff1 100%);
+    -webkit-transform: rotateZ(45deg);
+            transform: rotateZ(45deg);
+    width: 100%;
+  }
+  body .fierita-wrapper .sky-container .star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #c5c5c5, rgba(0, 0, 255, 0));
+    -webkit-filter: drop-shadow(0 0 6px #eaeffa);
+            filter: drop-shadow(0 0 6px #eaeffa);
+    -webkit-animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+            animation: tail 3000ms ease-in-out infinite, shooting 3000ms ease-in-out infinite;
+  }
+  body .fierita-wrapper .sky-container .star::before,
+  body .fierita-wrapper .sky-container .star::after {
+    position: absolute;
+    content: "";
+    top: calc(50% - 1px);
+    right: 0;
+    height: 2px;
+    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #d3dae9, rgba(0, 0, 255, 0));
+    border-radius: 100%;
+    -webkit-transform: translateX(50%) rotateZ(45deg);
+            transform: translateX(50%) rotateZ(45deg);
+    -webkit-animation: shining 3000ms ease-in-out infinite;
+            animation: shining 3000ms ease-in-out infinite;
+  }
+  body .fierita-wrapper .sky-container .star::after {
+    -webkit-transform: translateX(50%) rotateZ(-45deg);
+            transform: translateX(50%) rotateZ(-45deg);
+  }
+  body .fierita-wrapper .sky-container .star:nth-child(1) {
+    top: calc(50% - 200px);
+    left: calc(50% - 300px);
+    -webkit-animation-delay: 650ms;
+            animation-delay: 650ms;
+  }
+  body .fierita-wrapper .sky-container .star:nth-child(1)::before,
+  body .fierita-wrapper .sky-container .star:nth-child(1)::after {
+    -webkit-animation-delay: 650ms;
+            animation-delay: 650ms;
+  }
+  body .fierita-wrapper .sky-container .star:nth-child(2) {
+    top: calc(50% - -50px);
+    left: calc(50% - 190px);
+    -webkit-animation-delay: 150ms;
+            animation-delay: 150ms;
+  }
+  body .fierita-wrapper .sky-container .star:nth-child(2)::before,
+  body .fierita-wrapper .sky-container .star:nth-child(2)::after {
+    -webkit-animation-delay: 150ms;
+            animation-delay: 150ms;
+  }
+  body .fierita-wrapper .sky-container .star:nth-child(3) {
+    top: calc(50% - -90px);
+    left: calc(50% - 200px);
+    -webkit-animation-delay: 1600ms;
+            animation-delay: 1600ms;
+  }
+  body .fierita-wrapper .sky-container .star:nth-child(3)::before,
+  body .fierita-wrapper .sky-container .star:nth-child(3)::after {
+    -webkit-animation-delay: 1600ms;
+            animation-delay: 1600ms;
+  }
+  body .fierita-wrapper .sky-container .star:nth-child(4) {
+    top: calc(50% - 50px);
+    left: calc(50% - 250px);
+    -webkit-animation-delay: 4700ms;
+            animation-delay: 4700ms;
+  }
+  body .fierita-wrapper .sky-container .star:nth-child(4)::before,
+  body .fierita-wrapper .sky-container .star:nth-child(4)::after {
+    -webkit-animation-delay: 4700ms;
+            animation-delay: 4700ms;
+  }
+  body .fierita-wrapper .sky-container .star:nth-child(5) {
+    top: calc(50% - -190px);
+    left: calc(50% - 200px);
+    -webkit-animation-delay: 2100ms;
+            animation-delay: 2100ms;
+  }
+  body .fierita-wrapper .sky-container .star:nth-child(5)::before,
+  body .fierita-wrapper .sky-container .star:nth-child(5)::after {
+    -webkit-animation-delay: 2100ms;
+            animation-delay: 2100ms;
+  }
+  @-webkit-keyframes tail {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 100px;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  @keyframes tail {
+    0% {
+      width: 0;
+    }
+    30% {
+      width: 100px;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  @-webkit-keyframes shining {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 30px;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  @keyframes shining {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 30px;
+    }
+    100% {
+      width: 0;
+    }
+  }
+  @-webkit-keyframes shooting {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(320px);
+              transform: translateX(320px);
+    }
+  }
+  @keyframes shooting {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(320px);
+              transform: translateX(320px);
+    }
+  }
+  body .fierita-wrapper .fierita-title {
+    margin-top: 150px;
+    margin-left: 30px;
+    font-size: 4rem;
+    width: 20%;
+    height: 600px;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  body .fierita-wrapper .second-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    height: 600px;
+  }
+  body .fierita-wrapper .second-section .description {
+    margin: 30px;
+    text-align: justify;
+    width: 30%;
+    height: 500px;
+    font-size: 0.8rem;
+  }
+  body .fierita-wrapper .second-section .second-section-image {
+    border-radius: 90%;
+    background-image: url("../images/gallery/galeria 2/4.JPG");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    height: 500px;
+  }
+  body .fierita-wrapper .description-title {
+    margin-top: 120px;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=fierita.css.map */

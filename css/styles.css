@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Crimson Text:wght@400;500;600&family=Open+Sans:wght@300;400;600;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@400;700&display=swap");
 body {
   background-color: black;
   margin: 0px;
@@ -36,6 +35,7 @@ body .header .nav .hamburger-container .hamburger {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  cursor: pointer;
 }
 
 body .header .nav .hamburger-container .hamburger .icon {
@@ -106,6 +106,8 @@ body .header .nav .elements-container .elements {
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 20px;
+  -webkit-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
 }
 
 body .header .nav .elements-container .elements .line {
@@ -178,7 +180,7 @@ body .content .name-container .name {
   padding: 30px;
   padding-bottom: 0;
   margin: 0px;
-  font-family: "Gayathri", sans-serif;
+  font-family: "open sans", sans-serif;
   text-shadow: 0px 0px 0px #969696;
 }
 
@@ -211,6 +213,7 @@ body .content .about-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -226,7 +229,7 @@ body .content .about-text-container {
 body .content .about-text-container .about-title {
   color: #fafafa;
   font-size: 1rem;
-  font-family: "Crimson Text", sans-serif;
+  font-family: "open sans", sans-serif;
 }
 
 body .content .about-text-container .about-text {
@@ -345,6 +348,7 @@ body .footer .footer-content .top-content .info {
 
 body .footer .footer-content .top-content .info .title {
   font-size: 0.8rem;
+  font-family: 'open sans', sans-serif;
 }
 
 body .footer .footer-content .top-content .info .subtitle {
@@ -539,17 +543,19 @@ body .footer .footer-content .footer-line {
   }
   body .content .middle-content .name-container .name {
     color: #fafafa;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     padding: 0px;
     padding-bottom: 0;
-    font-family: "Gayathri", sans-serif;
+    font-family: "open sans", sans-serif;
     position: absolute;
     top: -180px;
     text-shadow: 0px 0px 2px black;
+    opacity: 0;
   }
   body .content .middle-content .name-container .name-2 {
     margin-top: 45px;
-    font-size: 4rem;
+    font-size: 3.8rem;
+    opacity: 0;
   }
   body .content .middle-content .name-container .about-photo-container {
     padding: 0px;
@@ -585,7 +591,7 @@ body .footer .footer-content .footer-line {
     font-family: "Crimson Text", sans-serif;
   }
   body .content .middle-content .about-text-container .about-text {
-    width: 55%;
+    width: 80%;
     margin-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -631,6 +637,8 @@ body .footer .footer-content .footer-line {
     width: 100%;
     height: 100%;
     background-color: #080808;
+    letter-spacing: 1.2px;
+    font-weight: 400;
   }
   body .footer .footer-content {
     width: 100%;
@@ -672,20 +680,24 @@ body .footer .footer-content .footer-line {
   body .footer .footer-content .top-content .info .title {
     font-size: 0.8rem;
     color: #fafafa;
+    font-family: 'open sans', sans-serif;
   }
   body .footer .footer-content .top-content .info .subtitle {
     font-size: 0.6rem;
+    font-family: 'open sans', sans-serif;
   }
   body .footer .footer-content .top-content .info .all-info {
     margin: 0;
   }
   body .footer .footer-content .footer-title {
     color: #fafafa;
-    font-size: 2rem;
-    margin: 20px;
+    font-size: 1.3rem;
+    margin: 0px;
     text-align: right;
-    margin-right: 0px;
+    margin-top: 10px;
     width: 100%;
+    font-family: 'open sans', sans-serif;
+    letter-spacing: 1.2;
   }
   body .footer .footer-content .footer-line {
     width: 100%;
