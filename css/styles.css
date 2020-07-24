@@ -19,8 +19,8 @@ body .header .nav {
       -ms-flex-align: center;
           align-items: center;
   position: fixed;
-  top: 0;
   z-index: 999;
+  top: 0;
 }
 
 body .header .nav .hamburger-container {
@@ -129,7 +129,7 @@ body .content {
 }
 
 body .content .main-photo-container {
-  margin-top: 0;
+  width: 100%;
 }
 
 body .content .main-photo-container .main-photo {
@@ -171,6 +171,7 @@ body .content .name-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  text-align: center;
 }
 
 body .content .name-container .name {
@@ -178,6 +179,7 @@ body .content .name-container .name {
   color: #fafafa;
   font-size: 1.5rem;
   padding: 30px;
+  line-height: 35px;
   padding-bottom: 0;
   margin: 0px;
   font-family: "open sans", sans-serif;
@@ -191,9 +193,10 @@ body .content .name-container .name:first-child {
 body .content .name-container .name:nth-child(2) {
   padding: 0 30px 0 0;
   padding-left: 30px;
-  font-size: 3rem;
+  font-size: 2.3rem;
   margin: 0px;
   color: #fafafa;
+  margin-bottom: 40px;
 }
 
 body .content .about-photo-container {
@@ -213,7 +216,7 @@ body .content .about-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 80%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -268,7 +271,7 @@ body .content .see-more-container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 80px;
+  height: 90px;
 }
 
 body .content .see-more-container .see-more {
