@@ -199,6 +199,43 @@ body .fierita-wrapper .fierita-title {
   width: 20%;
   -webkit-transition: 2s;
   transition: 2s;
+  height: 500px;
+}
+
+body .fierita-wrapper .second-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+body .fierita-wrapper .second-section .description {
+  margin: 30px;
+  text-align: justify;
+  width: 90%;
+  height: 500px;
+  font-size: 0.8rem;
+}
+
+body .fierita-wrapper .second-section .second-section-image {
+  border-radius: 90%;
+  background-image: url("../images/gallery/galeria 2/4.JPG");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 350px;
 }
 
 body .fierita-wrapper .description {

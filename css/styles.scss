@@ -226,27 +226,31 @@ body {
             box-sizing: border-box;
             align-items: stretch;
             padding: 30px;
-
             .top-content {
                 width: 100%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
+                text-decoration: none;
 
                 .info {
                     display: flex;
                     flex-direction: column;
                     margin-bottom: 20px;
+                    text-decoration: none;
 
                     .title {
                         font-size: 0.8rem;
                         font-family: 'open sans', sans-serif;
+                        text-decoration: none;
 
                     }
 
                     .subtitle {
                         font-size: 0.6rem;
                         color: #747474;
+                        text-decoration: none;
+
                     }
                     .all-info {
                         margin: 0;
@@ -489,6 +493,8 @@ body {
                     display: flex;
                     justify-content: space-between;
                     flex-direction: row;
+                    text-decoration: none;
+
                     .info {
                         display: flex;
                         flex-direction: column;
@@ -496,12 +502,14 @@ body {
                             font-size: 0.8rem;
                             color: #fafafa;
                             font-family: 'open sans', sans-serif;
-
+                            text-decoration: none;
+                            
                         }
 
                         .subtitle {
                             font-size: 0.6rem;
                             font-family: 'open sans', sans-serif;
+                            text-decoration: none;
 
                         }
                         .all-info {
