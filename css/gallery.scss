@@ -12,11 +12,19 @@
             max-width: 100%;
         }
         .gallery-title {
-            width: 250px;
+            width: 200px;
             position: absolute;
-            // background-color: black;
+            background-color: #fafafa;
+            color: black;
+            letter-spacing: 1,5px;
+            font-size: 1.5rem;
             text-align: center;
-    padding: 10px;            
+            padding: 10px;
+
+            &:hover {
+                opacity: 0.5;
+                transition: 0.5s;
+            }
         }
     }
     .images {
@@ -29,7 +37,7 @@
             padding: 10px;
 
             .bottom-images {
-                width: 100%;
+                // width: 100%;
                 height: 500px;
                 margin: 20px;
                 object-fit: cover;
@@ -50,14 +58,17 @@
             align-items: center;
             justify-content: center;
             .image-container {
+                flex-basis: 10%;
+
                 &:hover {
                     opacity: 0.5;
                     transition: 0.5s;
                 }
                 .bottom-images {
-                    width: 300px;
+                    // width: 300px;
+                    // flex-basis: 50%;
                     height: 500px;
-                    margin: 20px;
+                    margin: 2%;
                     object-fit: cover;
                 }
             }
